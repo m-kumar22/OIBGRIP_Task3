@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 | Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="conver">
+            <form id="tempenter" onsubmit="converter(); return false">
+                <h3>Enter the temperature</h3>
+                <br>
+                <input type="number" name="temp" id="temp">
+                <select name="unit" id="tempUnit">
+                    
+                    <option value="cel">Convert to farehieit</option>
+                    <option value="fah">Convert to Celcius</option>
+                </select><br>
+                <input class="submit" type="submit" value="Convert"  name="temp"><br>
+                <span id="answer"></span>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
